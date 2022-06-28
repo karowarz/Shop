@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar__container">
+        <button class="navbar__hamburger hamburger">
+          <span class="hamburger__container" tabindex="-1">
+            <span class="hamburger__bars"></span>
+          </span>
+        </button>
+        <div class="navbar__menu">
+          <div class="navbar__menu--element navbar__logo">
+            <img src="./images/general/logotype.png" alt="" />
+          </div>
+          <a href="#" class="navbar__menu--element">home</a
+          ><a href="#" class="navbar__menu--element">shop</a
+          ><a href="#" class="navbar__menu--element">journal</a
+          ><a href="#" class="navbar__menu--element">elements</a
+          ><a href="#" class="navbar__menu--element">pages</a>
+        </div>
+        <h1 class="navbar__title">maison</h1>
+        <div class="navbar__icons">
+          <i class="fas fa-shopping-cart"></i>
+          <div class="navbar__items">2</div>
+        </div>
+      </div>
+      <header class="header">
+        <div class="header__slider slider">
+          <div class="slider__background">
+            <img
+              src="../images/general/flower1.png"
+              class="slider__image header__image"
+              alt="header flower"
+            />
+            <h1 class="slider__title header__text">Sky Planet</h1>
+            <h2 class="slider__subtitle header__text header__text--bottom">
+              Shop now
+            </h2>
+            <div class="header__pagination slider__pagination">
+              <div class="slider__dot slider--active"></div>
+              <div class="slider__dot"></div>
+              <div class="slider__dot"></div>
+            </div>
+            <h2 class="slider__number header__slider--number">1 of 3</h2>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__button-container">
+          <a href="#" class="main__categories">Categories</a>
+          <a href="#" class="main__filter">Filter</a>
+        </div>
+        <div class="main__grid-container">
+          <div class="main__grid-element main__grid-element--1">
+            <img src="../images/general/Stuff1.png" alt="" />
+            <h1 class="main__grid-element--text">Bottle Humidifier</h1>
+            <h2 class="main__grid-element--price">Add to Cart</h2>
+          </div>
+          <div class="main__grid-element main__grid-element--2">
+            <img src="../images/general/Stuff2.png" alt="" />
+            <h1 class="main__grid-element--text">Teapot</h1>
+            <h2 class="main__grid-element--price">$55.00</h2>
+          </div>
+          <div class="main__grid-element main__grid-element--3">
+            <img
+              class="main__grid-element--3--img"
+              src="../images/general/Stuff3.png"
+              alt=""
+            />
+            <h1 class="main__grid-element--text">Align Daybed</h1>
+            <h2 class="main__grid-element--price">$1,999.00</h2>
+          </div>
+          <div class="main__grid-element main__grid-element--4">
+            <img src="../images/general/Stuff4.png" alt="" />
+            <h1 class="main__grid-element--text">Beolit</h1>
+            <h2 class="main__grid-element--price">$599.00</h2>
+          </div>
+          <div class="main__grid-element main__grid-element--5">
+            <img src="../images/general/Stuff5.png" alt="" />
+            <h1 class="main__grid-element--text">Grey Watch</h1>
+            <h2 class="main__grid-element--price">$215.00</h2>
+          </div>
+          <div class="main__grid-element main__grid-element--6">
+            <img src="../images/general/Stuff6.png" alt="" />
+            <h1 class="main__grid-element--text">Bottle Humidifier</h1>
+            <h2 class="main__grid-element--price">$69.00</h2>
+          </div>
+          <div class="main__grid-element main__grid-element--7">
+            <img src="../images/general/Stuff7.png" alt="" />
+            <h1 class="main__grid-element--text">Bookends</h1>
+            <h2 class="main__grid-element--price">$179.00</h2>
+          </div>
+        </div>
+        <a href="#" class="main__show-more">Show More</a>
+      </main>
+      <div class="newsletter">
+        <h1 class="newsletter__header">Subscribe to our news</h1>
+        <form class="newsletter__form">
+          <input
+            type="text"
+            class="newsletter__input"
+            placeholder="Enter your email..."
+          />
+          <a href="#" class="newsletter__button">Subscribe</a>
+        </form>
+        <div class="newsletter__navigation">
+          <div><a href="#" class="newsletter__element">Shop</a></div>
+          <div><a href="#" class="newsletter__element">Journal</a></div>
+          <div><a href="#" class="newsletter__element">About Us</a></div>
+          <div><a href="#" class="newsletter__element">Contact</a></div>
+        </div>
+      </div>
+      <footer class="footer">
+        <p class="footer__text">Maison 2017</p>
+        <div class="footer__logos">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-pinterest"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

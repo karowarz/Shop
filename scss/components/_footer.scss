@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  font-size: $small-font;
+  justify-content: space-between;
+  margin-top: 4.3rem;
+  margin: 4.3rem 4rem;
+  &__logos {
+    display: flex;
+    width: 17rem;
+    justify-content: space-between;
+  }
+}
+
+.fab {
+  cursor: pointer;
+  color: gray;
+}

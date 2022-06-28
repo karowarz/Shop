@@ -1,0 +1,39 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  background-color: $light-gray;
+  min-height: 36rem;
+  align-items: center;
+  justify-content: center;
+  &__form {
+    height: 9vw;
+    display: inline-flex;
+    width: 90vw;
+  }
+  &__input {
+    width: 300px;
+    width: 70%;
+    &::placeholder {
+      font-size: 2rem;
+    }
+  }
+  &__button {
+    line-height: 9vw;
+    border: 3px solid #000;
+    width: 30%;
+    text-align: center;
+    font-size: $small-font;
+    font-weight: bold;
+  }
+  &__header {
+    font-size: 3rem;
+    font-weight: normal;
+  }
+  &__navigation {
+    display: flex;
+    width: 70vw;
+    justify-content: space-between;
+    font-size: $small-font;
+    margin-top: 9vw;
+  }
+}

@@ -1,0 +1,61 @@
+.navbar {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    min-height: 11rem;
+
+    @include respond(desktop) {
+      justify-content: flex-end;
+      background-color: #f5f5f5;
+      padding-right: 11.5rem;
+    }
+  }
+
+  &__menu {
+    display: none;
+    @include respond(desktop) {
+      width: 100%;
+      display: flex;
+      &--element {
+        margin-right: 4.5rem;
+        font-size: 1.6rem;
+        z-index: 2;
+      }
+    }
+  }
+
+  &__logo {
+    @include respond(desktop) {
+      margin-left: 11.2rem;
+      margin-right: auto;
+    }
+  }
+
+  &__title {
+    font-size: 4.2rem;
+    @include respond(desktop) {
+      display: none;
+    }
+  }
+  &__icons {
+    margin-right: 4rem;
+    font-size: 3.5rem;
+    position: relative;
+  }
+  &__items {
+    position: absolute;
+    bottom: 1rem;
+    right: -1rem;
+    color: white;
+    background-color: black;
+    text-align: center;
+    height: 2.4rem;
+    padding-top: 0.6rem;
+    // font-weight: bold;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    font-size: 1.2rem;
+  }
+}
