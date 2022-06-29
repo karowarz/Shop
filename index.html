@@ -60,10 +60,35 @@
       </header>
       <main class="main">
         <div class="main__button-container">
-          <a href="#" class="main__categories">Categories</a>
+          <a href="#" class="main__categories--button">Categories</a>
           <a href="#" class="main__filter">Filter</a>
         </div>
         <div class="main__grid-container">
+          <div class="main__filters-container">
+            <div class="main__categories">
+              <a href="" class="main__category"> All products</a>
+              <a href="" class="main__category"> Living</a>
+              <a href="" class="main__category"> Dining</a>
+              <a href="" class="main__category"> Furniture</a>
+              <a href="" class="main__category"> Lighting</a>
+              <a href="" class="main__category"> Technics</a>
+              <a href="" class="main__category"> Accesories</a>
+            </div>
+            <div class="main__filters">
+              <h1 class="main__filters--title">Filter by</h1>
+              <div class="main__filters--input">
+                <h2>Price</h2>
+                <input
+                  type="range"
+                  id="price"
+                  name="price"
+                  min="0"
+                  max="2000"
+                />
+              </div>
+            </div>
+          </div>
+
           <div class="main__grid-element main__grid-element--1">
             <img src="../images/general/Stuff1.png" alt="" />
             <h1 class="main__grid-element--text">Bottle Humidifier</h1>

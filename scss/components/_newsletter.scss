@@ -6,21 +6,20 @@
   align-items: center;
   justify-content: center;
   &__form {
-    height: 9vw;
+    height: 5rem;
     display: inline-flex;
-    width: 90vw;
+    min-width: 56rem;
   }
   &__input {
-    width: 300px;
-    width: 70%;
+    min-width: 36rem;
     &::placeholder {
       font-size: 2rem;
     }
   }
   &__button {
-    line-height: 9vw;
+    width: 16.5rem;
     border: 3px solid #000;
-    width: 30%;
+    line-height: 4.7rem;
     text-align: center;
     font-size: $small-font;
     font-weight: bold;

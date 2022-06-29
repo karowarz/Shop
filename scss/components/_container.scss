@@ -1,6 +1,8 @@
 .container {
   max-width: 117rem;
 
-  min-width: 144rem;
   margin: 0 auto;
+  @include respond(desktop) {
+    min-width: 144rem;
+  }
 }
