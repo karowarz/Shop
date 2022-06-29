@@ -76,15 +76,44 @@
             </div>
             <div class="main__filters">
               <h1 class="main__filters--title">Filter by</h1>
-              <div class="main__filters--input">
-                <h2>Price</h2>
-                <input
-                  type="range"
-                  id="price"
-                  name="price"
-                  min="0"
-                  max="2000"
-                />
+              <form action="">
+                <h2 class="main__filtres--subtitle">Price</h2>
+                <input type="number" id="price" name="price" />
+                <input type="number" id="max-price" name="max-price" />
+                <input type="submit" value="Submit" />
+              </form>
+              <div class="main__colors">
+                <h2 class="main__filters--subtitle">Color</h2>
+                <div class="main__color"></div>
+                <div class="main__color"></div>
+                <div class="main__color"></div>
+                <div class="main__color"></div>
+                <div class="main__color"></div>
+              </div>
+              <div class="main__sizes">
+                <h2 class="main__filters--subtitle">Size</h2>
+                <div class="main__size">Small</div>
+                <div class="main__size">Medium</div>
+                <div class="main__size">Large</div>
+              </div>
+              <div class="main__brands">
+                <h2 class="main__filters--subtitle">Brands</h2>
+                <div class="main__brand">Banshu Hamono</div>
+                <div class="main__brand">Bower</div>
+                <div class="main__brand">Braun</div>
+                <div class="main__brand">Elevenplus</div>
+                <div class="main__brand">Field</div>
+                <div class="main__brand">Henry Wilson</div>
+                <div class="main__brand">Menu</div>
+              </div>
+              <div class="main__popularTgs">
+                <h2 class="main__filters--subtitle">Popular Tags</h2>
+                <div class="main__tag">Simple</div>
+                <div class="main__tag">Minimalism</div>
+                <div class="main__tag">Furniture</div>
+                <div class="main__tag">White</div>
+                <div class="main__tag">Black</div>
+                <div class="main__tag">Accesories</div>
               </div>
             </div>
           </div>
