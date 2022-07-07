@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="./scss/main.scss" />
   </head>
   <body>
     <div class="container">
@@ -59,12 +60,17 @@
         </div>
       </header>
       <main class="main">
-        <div class="main__button-container">
-          <a href="#" class="main__categories--button">Categories</a>
-          <a href="#" class="main__filter">Filter</a>
+        <div class="main__phone--contaniers">
+          <h1 class="main__phone--category">Categories</h1>
+          <h1 class="main__phone--filter">Filter</h1>
         </div>
-        <div class="main__grid-container">
-          <div class="main__filters-container">
+        <div class="main__headers--contaniers">
+          <h1 class="main__headers--categories">Categories</h1>
+          <h1 class="main__headers--sort">Sort by: A-Z</h1>
+          <h1 class="main__headers--results">Showing 1-12 of 24 results</h1>
+        </div>
+        <div class="main__grid--container">
+          <div class="main__filters--container">
             <div class="main__categories">
               <a href="" class="main__category"> All products</a>
               <a href="" class="main__category"> Living</a>
@@ -75,45 +81,60 @@
               <a href="" class="main__category"> Accesories</a>
             </div>
             <div class="main__filters">
+              <!-- <a href="#" class="main__filters--button">Filter</a> -->
               <h1 class="main__filters--title">Filter by</h1>
               <form action="">
                 <h2 class="main__filtres--subtitle">Price</h2>
-                <input type="number" id="price" name="price" />
-                <input type="number" id="max-price" name="max-price" />
-                <input type="submit" value="Submit" />
+                <input
+                  class="main__filters--input"
+                  type="text"
+                  id="price"
+                  name="price"
+                />
+                <input
+                  class="main__filters--input"
+                  type="text"
+                  id="max-price"
+                  name="max-price"
+                />
+                <input
+                  class="main__filters--btn"
+                  type="submit"
+                  value="Filter"
+                />
               </form>
+              <h2 class="main__filters--subtitle">Color</h2>
               <div class="main__colors">
-                <h2 class="main__filters--subtitle">Color</h2>
-                <div class="main__color"></div>
-                <div class="main__color"></div>
-                <div class="main__color"></div>
-                <div class="main__color"></div>
-                <div class="main__color"></div>
+                <div class="main__color main__color--gray"></div>
+                <div class="main__color main__color--white"></div>
+                <div class="main__color main__color--red"></div>
+                <div class="main__color main__color--blue"></div>
+                <div class="main__color main__color--green"></div>
               </div>
               <div class="main__sizes">
                 <h2 class="main__filters--subtitle">Size</h2>
-                <div class="main__size">Small</div>
-                <div class="main__size">Medium</div>
-                <div class="main__size">Large</div>
+                <p class="main__size">Small</p>
+                <p class="main__size">Medium</p>
+                <p class="main__size">Large</p>
               </div>
               <div class="main__brands">
                 <h2 class="main__filters--subtitle">Brands</h2>
-                <div class="main__brand">Banshu Hamono</div>
-                <div class="main__brand">Bower</div>
-                <div class="main__brand">Braun</div>
-                <div class="main__brand">Elevenplus</div>
-                <div class="main__brand">Field</div>
-                <div class="main__brand">Henry Wilson</div>
-                <div class="main__brand">Menu</div>
+                <p class="main__brand">Banshu Hamono</p>
+                <p class="main__brand">Bower</p>
+                <p class="main__brand">Braun</p>
+                <p class="main__brand">Elevenplus</p>
+                <p class="main__brand">Field</p>
+                <p class="main__brand">Henry Wilson</p>
+                <p class="main__brand">Menu</p>
               </div>
+              <h1 class="main__filters--title">Popular Tags</h1>
               <div class="main__popularTgs">
-                <h2 class="main__filters--subtitle">Popular Tags</h2>
-                <div class="main__tag">Simple</div>
-                <div class="main__tag">Minimalism</div>
-                <div class="main__tag">Furniture</div>
-                <div class="main__tag">White</div>
-                <div class="main__tag">Black</div>
-                <div class="main__tag">Accesories</div>
+                <p class="main__tag">Simple</p>
+                <p class="main__tag">Minimalism</p>
+                <p class="main__tag">Furniture</p>
+                <p class="main__tag">White</p>
+                <p class="main__tag">Black</p>
+                <p class="main__tag">Accesories</p>
               </div>
             </div>
           </div>
@@ -160,32 +181,32 @@
         </div>
         <a href="#" class="main__show-more">Show More</a>
       </main>
-      <div class="newsletter">
-        <h1 class="newsletter__header">Subscribe to our news</h1>
-        <form class="newsletter__form">
+      <div class="footer">
+        <h1 class="footer__header">Subscribe to our news</h1>
+        <form class="footer__form">
           <input
             type="text"
-            class="newsletter__input"
+            class="footer__form--input"
             placeholder="Enter your email..."
           />
-          <a href="#" class="newsletter__button">Subscribe</a>
+          <a href="#" class="footer__form--button">Subscribe</a>
         </form>
-        <div class="newsletter__navigation">
-          <div><a href="#" class="newsletter__element">Shop</a></div>
-          <div><a href="#" class="newsletter__element">Journal</a></div>
-          <div><a href="#" class="newsletter__element">About Us</a></div>
-          <div><a href="#" class="newsletter__element">Contact</a></div>
+        <div class="footer__navigation">
+          <div><a href="#" class="footer__element">Shop</a></div>
+          <div><a href="#" class="footer__element">Journal</a></div>
+          <div><a href="#" class="footer__element">About Us</a></div>
+          <div><a href="#" class="footer__element">Contact</a></div>
         </div>
+        <footer class="footer__logos--container">
+          <p class="footer__text">Maison 2017</p>
+          <div class="footer__logos">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </footer>
       </div>
-      <footer class="footer">
-        <p class="footer__text">Maison 2017</p>
-        <div class="footer__logos">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-pinterest"></i>
-          <i class="fab fa-youtube"></i>
-        </div>
-      </footer>
     </div>
 
     <script type="module" src="/main.js"></script>

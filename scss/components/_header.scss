@@ -2,35 +2,33 @@
   .slider {
     &__background {
       display: grid;
-      grid-template-columns: 34rem 1fr;
-      background-color: #f5f5f5;
-      min-height: 44rem;
-      padding-bottom: 4.4rem;
-      padding-right: 4rem;
-
+      grid-template-columns: min(34rem, 1fr) min(1fr, 9rem);
+      background-color: hsl(0, 0%, 96%);
       @include respond(desktop) {
-        min-height: 77.5rem;
-        grid-template-columns: 11.5rem 1fr 40rem 11.5rem;
+        // grid-template-columns: 11.5rem min(50rem, 1fr) 40rem 11.5rem;
+        grid-template-columns: 17.5rem 70rem;
+
+        max-height: 76rem;
+        outline: auto;
       }
     }
     &__image {
-      grid-area: 1/1/3/3;
+      grid-area: 1/2/3/3;
+      width: min(33rem, 100%);
       @include respond(desktop) {
-        grid-area: 1/2/2/3;
-        transform: scale(1.9);
-        margin-top: 5rem;
-        margin-left: 22rem;
+        width: 90%;
+        z-index: 4;
+        margin-bottom: 5rem;
       }
     }
     &__title {
       grid-area: 1/2/2/2;
       place-self: end start;
-      font-size: 4.1rem;
+      font-size: clamp(1rem, 30vw, 4rem);
+      background-color: hsla(0, 0%, 96%, 60%);
 
       @include respond(desktop) {
         grid-area: 1/3/2/4;
-        place-self: center;
-        padding-bottom: 9rem;
         font-size: 3rem;
       }
     }
@@ -38,9 +36,10 @@
       grid-area: 2/2/3/2;
       font-size: 2.8rem;
       text-decoration: underline;
+      font-size: clamp(0.5rem, 20vw, 2rem);
+      background-color: hsla(0, 0%, 96%, 60%);
       @include respond(desktop) {
-        grid-area: 1/3/2/4;
-        place-self: center;
+        grid-area: 2/3/3/4;
         font-size: 2.3rem;
         margin-right: 3rem;
       }
@@ -74,7 +73,7 @@
       grid-area: 2/2/3/2;
       place-self: end;
       @include respond(desktop) {
-        grid-area: 1/3/2/4;
+        grid-area: 2/3/3/4;
       }
     }
   }

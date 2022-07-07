@@ -1,4 +1,3 @@
-import './scss/main.scss';
 document.addEventListener('DOMContentLoaded', function () {
   //menu bar
   const menu = document.querySelector('.hamburger');

@@ -1,74 +1,203 @@
 .main {
-  &__button-container {
-    display: flex;
-    height: 10vw;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 2rem;
+  @include respond(desktop) {
+    padding: 0 11.5rem;
   }
-
-  &__filter {
-    @include respond(desktop) {
-      display: none;
-    }
-  }
-  &__grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    @include respond(desktop) {
-      // grid-template-columns: 11.5rem 33.5rem 1fr 11.5rem;
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  &__filters-container {
-    display: none;
-    @include respond(desktop) {
+  &__phone {
+    &--contaniers {
       display: flex;
-      flex-direction: column;
-      grid-row-start: span 3;
-    }
-  }
-  &__categories {
-    @include respond(desktop) {
-      display: flex;
-      flex-direction: column;
-      font-size: 2rem;
-      &--button {
-        position: absolute;
-        left: 11.5rem;
+      font-weight: bold;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      height: 12rem;
+      margin: 0 5rem;
+      @include respond(desktop) {
+        height: 0;
+        display: none;
       }
     }
   }
-  &__category {
-    @include respond(desktop) {
-      margin-bottom: 2rem;
+
+  &__headers {
+    &--contaniers {
+      display: none;
+      @include respond(desktop) {
+        display: flex;
+        height: 12rem;
+        align-items: flex-end;
+        justify-content: space-between;
+        // justify-content: center;
+        padding-bottom: 3rem;
+        // font-size: 2rem;
+      }
     }
+    &--sort {
+      margin-right: 12rem;
+    }
+    &--results {
+      margin-right: 4rem;
+    }
+  }
+
+  &__filters--container {
+    display: none;
+    @include respond(desktop) {
+      display: flex;
+      grid-row-start: span 3;
+      flex-direction: column;
+    }
+  }
+
+  &__categories {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.5rem;
+    border-bottom: 2px gray solid;
+    width: 70%;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+
+    &--header {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+  }
+
+  &__filters {
+    &--input {
+      width: 8rem;
+      height: 3rem;
+      margin-right: 1rem;
+      margin-bottom: 5rem;
+    }
+    &--btn {
+      background-color: #f5f5f5;
+      border: none;
+      width: 7rem;
+      height: 3rem;
+      margin-left: 1rem;
+    }
+    &--title {
+      // margin-bottom: 5rem;
+    }
+  }
+
+  &__colors {
+    display: flex;
+    width: 27rem;
+    height: 3.5rem;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
+
+  &__color {
+    height: 3.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    &--gray {
+      background-color: #c8c8c8;
+    }
+    &--white {
+      border: 0.5px solid gray;
+    }
+    &--red {
+      background-color: #fe8a8a;
+    }
+    &--blue {
+      background-color: #b3e7fd;
+    }
+    &--green {
+      background-color: #befeca;
+    }
+  }
+
+  &__sizes {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__brands {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 5rem;
+    border-bottom: 2px gray solid;
+    width: 70%;
+    margin-bottom: 5rem;
+  }
+
+  &__popularTgs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    font-size: 1.6rem;
+    width: 80%;
+  }
+
+  &__filters--subtitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  &__grid--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include respond(desktop) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  &__categories--button {
+    display: flex;
+    z-index: 2;
+    position: absolute;
   }
 
   &__grid-element {
     display: grid;
-    // grid-area: 1/3/2/4;
-    // outline: auto;
+    // grid-template-rows: 1fr 20px 20px;
 
-    &--text {
-      margin-left: 3.2rem;
+    @include respond(desktop) {
+      min-height: 50rem;
+      background-color: #f5f5f5;
     }
-    &--price {
-      margin-left: 3.2rem;
-    }
+
     & img {
       margin: auto;
       max-width: 80%;
       aspect-ratio: 1;
+
       @include respond(desktop) {
-        min-height: 51rem;
+        grid-area: 1/1/3/2;
+      }
+    }
+    &--text {
+      margin-left: 3rem;
+      margin-bottom: 0;
+      @include respond(desktop) {
+        margin-bottom: 1rem;
+        grid-area: 2/1/3/2;
+      }
+    }
+
+    &--price {
+      margin-left: 3rem;
+      margin-top: 1rem;
+      @include respond(desktop) {
+        margin-top: 4rem;
+        grid-area: 2/1/3/2;
       }
     }
   }
+
   &__show-more {
     display: block;
-    font-size: 2rem;
+    font-size: clamp(0.2rem, 5vw, 2rem);
     margin-top: 7rem;
     text-align: center;
     text-decoration: underline;

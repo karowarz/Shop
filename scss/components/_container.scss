@@ -1,8 +1,15 @@
 .container {
-  max-width: 117rem;
+  // max-width: 117rem;
+  // // // outline: auto;
+  // margin: 0 auto;
+  // @include respond(desktop) {
+  //   min-width: 144rem;
+  //   position: relative;
+  // }
+  display: grid;
 
-  margin: 0 auto;
-  @include respond(desktop) {
-    min-width: 144rem;
-  }
+  // grid-template-columns: repeat(auto-fit, minmax(max(117rem, 100%), 1fr));
+
+  grid-template-columns: minmax(min(117rem, 100%), 144rem);
+  place-content: center;
 }

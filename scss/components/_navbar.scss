@@ -6,10 +6,11 @@
     text-transform: uppercase;
     min-height: 11rem;
 
+    padding-right: clamp(1rem, 7vw, 11.5rem);
     @include respond(desktop) {
       justify-content: flex-end;
       background-color: #f5f5f5;
-      padding-right: 11.5rem;
+      // padding-right: 11.5rem;
     }
   }
 
@@ -34,14 +35,13 @@
   }
 
   &__title {
-    font-size: 4.2rem;
+    font-size: clamp(2.4rem, 6vw, 4.3rem);
     @include respond(desktop) {
       display: none;
     }
   }
   &__icons {
-    margin-right: 4rem;
-    font-size: 3.5rem;
+    font-size: clamp(1rem, 20vw, 3.5rem);
     position: relative;
   }
   &__items {
@@ -56,6 +56,6 @@
     // font-weight: bold;
     aspect-ratio: 1;
     border-radius: 50%;
-    font-size: 1.2rem;
+    font-size: clamp(0.2rem, 10vw, 1.2rem);
   }
 }
