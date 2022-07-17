@@ -5,11 +5,8 @@
       grid-template-columns: min(34rem, 1fr) min(1fr, 9rem);
       background-color: hsl(0, 0%, 96%);
       @include respond(desktop) {
-        // grid-template-columns: 11.5rem min(50rem, 1fr) 40rem 11.5rem;
         grid-template-columns: 17.5rem 70rem;
-
         max-height: 76rem;
-        outline: auto;
       }
     }
     &__image {
